@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/lpage.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/brands.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.2.1-web/css/fontawesome.css"
+    />
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="landingPage.html"
+        ><img src="./image/Starcorps logo/logofix.png"
+      /></a>
+      <div class="search">
+        <div class="dropbtn">
+          <input
+            type="text"
+            id="myInput"
+            onkeyup="myFunction()"
+            placeholder="Search for names.."
+            title="Type in a name"
+          />
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Login
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="login.php">Login</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          About
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <p align="center" style="color: white">
+            Starcorps is a tech company that works for making a better future,
+            We can do anything about tech, but we focusing at new technology
+            about EV, such as Electric Planes, Helicopter, Boats, Ships, Cars,
+            Bike ,etc
+          </p>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Data
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="table.php">Starcorps Employee Data</a>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="circle"></div>
+      <div class="content">
+        <div class="textbox">
+          <h2>
+            It's not just Company<br />It's <span><b>Star</b>Corps</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit
+            repudiandae omnis fuga necessitatibus, iure sapiente dicta, ad culpa
+            dolorum incidunt, magnam deleniti illum saepe architecto nesciunt
+            ipsum autem cumque magni? Fuga, sapiente corrupti? Quas quae
+            pariatur explicabo id sequi blanditiis voluptatibus labore ducimus
+            dolorem unde molestias ullam, autem praesentium.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="imgbox">
+          <img src="./image/Starcorps logo/logo2fix.png" class="starbucek" />
+        </div>
+      </div>
+
+      <ul class="sci">
+        <li>
+          <a href="#"
+            ><img class="social" src="./image/foto ldpg/facebook.png"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img class="social" src="./image/foto ldpg/instagram.png"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img class="social" src="./image/foto ldpg/twitter.png"
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".starbucek").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>
