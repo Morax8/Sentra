@@ -35,32 +35,15 @@ function btncncl(id_dp) {
     }
   });
 }
-
-//animation dropdown
-$(document).ready(function () {
-  $('a[href^="#welcome"]').addClass("active");
-
-  //smoothscroll
-  $(".menu-item").on("click", function (e) {
-    e.preventDefault();
-    var athis = this;
-    var target = this.hash,
-      menu = target;
-    var $target = $(target);
-
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $target.offset().top,
-        },
-        500,
-        "swing",
-        function () {
-          window.location.hash = target;
-          $(".menu-item").removeClass("active");
-          $(athis).addClass("active");
-        }
-      );
+// log out
+document.getElementById("logout").addEventListener("click", function (event) {
+  event.preventDefault(); // prevent the default anchor behavior
+  Swal.fire({
+    type: "warning",
+    title: "Log Out?",
+    showCancelButton: true,
+    confirmButtonText: "Log Out",
+  }).then((result) => {
+    location.href = "table.php";
   });
 });
